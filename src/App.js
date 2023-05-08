@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import Missions from './components/Missions';
 import SolarSystem from './components/SolarSytem';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <SolarSystem />
+        <Missions />
       </main>
     </>
   );
