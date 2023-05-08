@@ -1,9 +1,15 @@
 import './App.css';
 import Header from './components/Header';
+import SolarSystem from './components/SolarSytem';
 
 function App() {
   return (
-    <Header />
+    <>
+      <Header />
+      <main>
+        <SolarSystem />
+      </main>
+    </>
   );
 }
 
