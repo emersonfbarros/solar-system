@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap') ;
+
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: Epilogue , sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-attachment: fixed;
+  background-image: url('./images/background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  height: 150px;
+  line-height: 150px;
+  margin: 4rem auto;
+  position: relative;
+  width: 500px;
+}
+
+.header-title {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ellipse {
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 5.5rem;
+  position: absolute;
+  right: 20%;
+  top: 18%;
+  transform: rotate(-22deg);
+  width: 19rem;
+}
+
+.title-body {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.solar-system {
+  margin: 8rem auto;
+}
+
+.planet-name {
+  bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+}
+
+.planets {
+  display: flex;
+  height: 17em;
+  justify-content: space-between;
+  margin: auto;
+  width: 96%;
+}
+
+.planet-center {
+  bottom: 50%;
+  height: 1px;
+  position: absolute;
+  width: 50vw;
+  z-index: -1;
+}
+
+.planet {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.planet:nth-child( 1 ) > img:nth-child( 1 ) {
+  width: 2.56em;
+}
+
+.planet:nth-child( 2 ) > img:nth-child( 1 ) {
+  width: 6.38em;
+}
+
+.planet:nth-child( 3 ) > img:nth-child( 1 ) {
+  width: 6.63em;
+}
+
+.planet:nth-child( 4 ) > img:nth-child( 1 ) {
+  width: 4.12em;
+}
+
+.planet:nth-child( 5 ) > img:nth-child( 1 ) {
+  width: 17em;
+}
+
+.planet:nth-child( 6 ) > img:nth-child( 1 ) {
+  transform: rotate(-16.53deg);
+  width: 17.63em;
+}
+
+.planet:nth-child( 7 ) > img:nth-child( 1 ) {
+  width: 6.82em;
+}
+
+.planet:nth-child( 8 ) > img:nth-child( 1 ) {
+  width: 6.69em;
+}
+
+.missions {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.9);
+  margin: auto;
+  padding-block: 3rem;
+  padding-inline: 2rem;
+  width: 92%;
+}
+
+.missions > h2:nth-child( 1 ) {
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.mission-card {
+  background: rgba(24, 26, 37, 0.5);
+  border: 1px solid white;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  mix-blend-mode: hard-light;
+  width: 34rem;
+}
+
+.mission-name {
+  font-size: 28px;
+  font-weight: 300;
+  margin-block: 1rem;
+  padding: 1rem 1.5rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.wrapper-mission {
+  display: flex;
+  margin-block: 2rem 1rem;
+  padding: 0.5rem 1.5rem 1rem;
+}
+
+.mission-year, .mission-country {
+  margin-inline: 0.6rem 1.2rem;
+}
+
+.flag-desination {
+  margin-left: auto;
+}
+
+.mission-destination {
+  margin-left: 0.6rem;
+}
+
+.footer {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 400;
+  justify-content: center;
+  margin: 1rem auto 0.7rem;
+  padding: 0.4rem;
+  width: 92%;
+}
+
+.nav-footer {
+  margin: 5px 0 0 10px;
+}
+
+.nav-footer > a:nth-child( 1 ) > svg:nth-child( 1 ) {
+  margin-right: 12px;
+}
+
+@media ( max-width : 600px ) {
+
+  :root {
+
+    --size-divisor: 2.95;
+  }
+
+  .header {
+    height: auto;
+    margin: 0.5rem auto;
+    width: 100vw;
+  }
+
+  .header-title {
+    font-size: 2.8rem;
+  }
+
+  .ellipse {
+    height: 4rem;
+    right: 20%;
+    top: 26.5%;
+    width: 14rem;
+  }
+
+  .solar-system {
+    margin: 1.8rem auto;
+  }
+
+  .title-body {
+    font-size: 28px;
+  }
+
+  .planets {
+    height: 6rem;
+  }
+
+  .planet-center {
+    width: 25vmin;
+  }
+
+  .planet:nth-child( 1 ) > img:nth-child( 1 ) {
+    width: calc(2.56em / var(--size-divisor));
+  }
+
+  .planet:nth-child( 2 ) > img:nth-child( 1 ) {
+    width: calc(6.38em / var(--size-divisor));
+  }
+
+  .planet:nth-child( 3 ) > img:nth-child( 1 ) {
+    width: calc(6.63em / var(--size-divisor));
+  }
+
+  .planet:nth-child( 4 ) > img:nth-child( 1 ) {
+    width: calc(4.12em / var(--size-divisor));
+  }
+
+  .planet:nth-child( 5 ) > img:nth-child( 1 ) {
+    width: calc(17em / var(--size-divisor));
+  }
+
+  .planet:nth-child( 6 ) > img:nth-child( 1 ) {
+    transform: rotate(-16.53deg);
+    width: calc(17.63em / var(--size-divisor));
+  }
+
+  .planet:nth-child( 7 ) > img:nth-child( 1 ) {
+    width: calc(6.82em / var(--size-divisor));
+  }
+
+  .planet:nth-child( 8 ) > img:nth-child( 1 ) {
+    width: calc(6.69em / var(--size-divisor));
+  }
+
+  .planet-name {
+    font-size: 0.38rem;
+  }
+
+  .missions {
+    padding-block: 1.5rem;
+    padding-inline: 0.7rem;
+    width: 98%;
+  }
+
+  .missions > h2:nth-child( 1 ) {
+    margin-bottom: 1.2rem;
+  }
+
+  .mission-name {
+    font-size: 18px;
+    margin-block: 0.4rem;
+    padding: 0.7rem 1.2rem 0.2rem;
+  }
+
+  .wrapper-mission {
+    margin-block: 0.8rem 0.4rem;
+    padding: 0.2rem 1.2rem 0.5rem;
+  }
+
+  .mission-year, .mission-country {
+    margin-inline: 0.3rem 0.8rem;
+  }
+
+  .mission-year, .mission-country, .mission-destination {
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    font-size: 1rem;
+    width: 98%;
+  }
+}
