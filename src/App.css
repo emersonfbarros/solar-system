@@ -10,6 +10,7 @@
 
 html {
   background-attachment: fixed;
+  background-color: black;
   background-image: url('./images/background.png');
   background-position: center center;
   background-repeat: no-repeat;
